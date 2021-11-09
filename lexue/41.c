@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h> 
 char num[13];
 int nnum[13];
 int main()
