@@ -8,9 +8,17 @@
 
 ## 操作笔记&杂记
 ### VScode配置流程
-#### 我配置的时候是在网上找了个别人写好的配置软件自动配置的，具体过程等待之后装虚拟机后进一步研究
+#### 211114更新
+    * 下载vscode 勾选添加path和添加到右键菜单//方便
+    * 这一步完全摆烂了，找了个自动配置脚本 https://vscch3.vercel.app/ 连接上用网盘下载，然后跟着视频教程
+    * 按F6看看有没有hello world
+    * 其他的推荐插件 code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
 
-### GitHub with VScode
+
+### GitHub with VScode（在完善中
+    * Dev-sidecar
+    * 从GitHub官网上下载github desktop 用它来克隆初始化本地库？
+    * 
 
 ### 书签同步插件
 gist：https://gist.github.com/TT2TER/7eed647ec1393600721529f308f007c8
