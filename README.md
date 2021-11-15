@@ -8,7 +8,7 @@
 
 ## 操作笔记&杂记
 ### VScode配置流程
-#### 211115更新
+#### 211116更新
     * 下载vscode 勾选添加path和添加到右键菜单//方便
    ![图片](https://user-images.githubusercontent.com/93923763/141787540-641b1d28-5b4f-4a6a-9a37-f673fa068748.png)
 
@@ -32,10 +32,19 @@
 
     * 其他的推荐插件 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code, code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
 
-### powershell乱码 <span id="jump"></span>
+### powershell乱码 <span id="jump"></span> 需要[代理](#jump1)
+    * 使用 Powerline 进行样式化，并使用 Cascadia Code PL 可从 Cascadia 代码 GitHub 版本页下载的字体:https://github.com/microsoft/cascadia-code/releases/tag/v2110.31
+   ![图片](https://user-images.githubusercontent.com/93923763/141817035-ce4fddce-a047-4a38-9230-6f92e89b5963.png)
+   
+    * 安装上图所示的ttf文件
+   ![图片](https://user-images.githubusercontent.com/93923763/141817989-01200d9a-c1c9-4248-a909-4c009eb88f99.png)
+
+    * vscode中F6调出对应的powershell，属性，改字体
 
 ### GitHub with VScode（在完善中
-    * Dev-sidecar
+    * Dev-sidecar 
+   <span id="jump1"></span>
+    * 从 https://git-scm.com/ 上下载64位的Git,一路默认;
     * 从GitHub官网上下载github desktop 用它来克隆初始化本地库？
     * 
 
