@@ -44,8 +44,7 @@
 
     * 下载解压并且找到上图所示的ttf文件，安装
   
-   ![图片](https://user-images.githubusercontent.com/93923763/141817989-01200d9a-c1c9-4248-a909-4c009eb88f99.png)
-   ![图片](https://user-images.githubusercontent.com/93923763/141823717-3dade57c-291b-4324-8929-bd6e29bc0a5d.png)
+   ![图片](https://user-images.githubusercontent.com/93923763/141824661-c996e090-1e02-4b3a-9379-f76c8706ff98.png)
 
     * vscode中F6调出对应的powershell，属性，改字体
 
