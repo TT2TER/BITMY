@@ -26,6 +26,7 @@
     * 按F6看看有没有hello world
     * 关于Windowspowershell中如图乱码问题，
    ![图片](https://user-images.githubusercontent.com/93923763/141790471-54f55db8-05b0-4175-8891-5c3635ad9a2f.png)
+   
    参见：[powershell乱码](#jump)
 
     * 其他的推荐插件 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code, code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
