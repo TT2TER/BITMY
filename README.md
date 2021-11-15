@@ -39,9 +39,10 @@
   
    ![图片](https://user-images.githubusercontent.com/93923763/141820406-d253e9ed-262c-46db-bf4a-670e2bd062a6.png)
    
+  
    ![图片](https://user-images.githubusercontent.com/93923763/141821501-be938d5a-b49a-40b5-a7b8-4c3efc7ca518.png)
 
-    * 下载解压并且找到安装上图所示的ttf文件
+    * 下载解压并且找到上图所示的ttf文件，安装
   
    ![图片](https://user-images.githubusercontent.com/93923763/141817989-01200d9a-c1c9-4248-a909-4c009eb88f99.png)
    ![图片](https://user-images.githubusercontent.com/93923763/141823717-3dade57c-291b-4324-8929-bd6e29bc0a5d.png)
