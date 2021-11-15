@@ -33,20 +33,30 @@
     * 其他的推荐插件 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code, code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
 
 ### powershell乱码 <span id="jump"></span> 需要[代理](#jump1)
-    * 使用 Powerline 进行样式化，并使用 Cascadia Code PL 可从 Cascadia 代码 GitHub 版本页下载的字体:https://github.com/microsoft/cascadia-code/releases/tag/v2110.31
-   ![图片](https://user-images.githubusercontent.com/93923763/141817035-ce4fddce-a047-4a38-9230-6f92e89b5963.png)
+    * 使用 Powerline 进行样式化，并使用更纱黑体 可从清华镜像站下载:https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/
    
-    * 安装上图所示的ttf文件
+   ![图片](https://user-images.githubusercontent.com/93923763/141820127-c5aa720f-e939-4279-81a8-d6555d270e8d.png)
+  
+   ![图片](https://user-images.githubusercontent.com/93923763/141820406-d253e9ed-262c-46db-bf4a-670e2bd062a6.png)
+   
+   ![图片](https://user-images.githubusercontent.com/93923763/141821501-be938d5a-b49a-40b5-a7b8-4c3efc7ca518.png)
+
+    * 下载解压并且找到安装上图所示的ttf文件
+  
    ![图片](https://user-images.githubusercontent.com/93923763/141817989-01200d9a-c1c9-4248-a909-4c009eb88f99.png)
+   ![图片](https://user-images.githubusercontent.com/93923763/141823717-3dade57c-291b-4324-8929-bd6e29bc0a5d.png)
 
     * vscode中F6调出对应的powershell，属性，改字体
 
+   ![图片](https://user-images.githubusercontent.com/93923763/141822039-3f0575e0-4df3-4994-ac4d-68e65a8cd2d0.png)
+   
+    * bingo
+   
 ### GitHub with VScode（在完善中
     * Dev-sidecar 
-   <span id="jump1"></span>
+   <span id="jump1"></span>https://gitee.com/docmirror/dev-sidecar#%E4%BA%8C%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B 在快速开始中下载
     * 从 https://git-scm.com/ 上下载64位的Git,一路默认;
     * 从GitHub官网上下载github desktop 用它来克隆初始化本地库？
-    * 
 
 ### 书签同步插件
 gist：https://gist.github.com/TT2TER/7eed647ec1393600721529f308f007c8
