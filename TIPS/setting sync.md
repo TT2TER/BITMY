@@ -17,3 +17,6 @@
     快捷键 shift Alt U上传，弹出的强制上传选“是”（抹除新建gist时写的内容，所以要上传在新的gist上）
           shift Alt D下载，自动下载，同步完毕！
 ![图片](https://user-images.githubusercontent.com/93923763/141959854-19031b09-68f2-4461-85e5-313ba2f5e6e1.png)
+
+    再次shift Alt检查是否同步成功
+![图片](https://user-images.githubusercontent.com/93923763/141960271-388aa253-7750-4860-bf7f-74758d8eec8e.png)
