@@ -8,10 +8,10 @@ THIS IS MY FRESH YEAR OF COLLEGE AND THERE WILL BE SOME CODES OR TIPS ABOUT C LA
 ### MOOC
 
 ### TIPS:
-##### [code with vscode](TIPS/code%20with%20vscode.md)
-##### [create a token](TIPS/create%20a%20token.md)
-##### [create gist](TIPS/create%20gist.md)
-##### [setting sync](TIPS/setting%20sync.md)
+##### [code with vscode](TIPS/About%20VScode/code%20with%20vscode.md)
+##### [create a token](TIPS/About%20GitHub/create%20a%20token.md)
+##### [create gist](TIPS/About%20GitHub/create%20gist.md)
+##### [setting sync](TIPS/About%20GitHub/setting%20sync.md)
 
 # 操作笔记&杂记(temp)
 ### 书签同步插件
