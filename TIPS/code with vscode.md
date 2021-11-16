@@ -26,8 +26,18 @@
 
     * 其他的推荐插件 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code, code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
 
+## GitHub with VScode (Building)
+    * Dev-sidecar 下载链接如下
+   <span id="jump1"></span>
+   [Dev-sidecar下载链接](https://gitee.com/docmirror/dev-sidecar#%E4%BA%8C%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
 
-### powershell乱码 <span id="jump"></span> 需要[代理](#jump1)
+    * 在快速开始中下载后按照网站教程安装证书
+[使用火狐浏览器无法打开github情况解决办法](#火狐浏览器github)
+
+    * 从 https://git-scm.com/ 上下载64位的Git,一路默认;
+    * 从GitHub官网上下载github desktop 用它来克隆初始化本地库
+
+## powershell乱码 <span id="jump"></span> 需要[代理](#jump1)
     * 使用 Powerline 进行样式化，并使用更纱黑体 可从清华镜像站下载:https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/
     * Sarasa Gothic / 更纱黑体：基于Noto Sans，全宽引号
     * Sarasa UI / 更纱黑体 UI：基于Noto Sans窄引号
@@ -60,18 +70,7 @@
     * bingo
    
 
-
-### GitHub with VScode（在完善中
-    * Dev-sidecar 下载链接如下
-   <span id="jump1"></span>
-   [Dev-sidecar下载链接](https://gitee.com/docmirror/dev-sidecar#%E4%BA%8C%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
-
-    * 在快速开始中下载后按照网站教程安装证书
-[使用火狐浏览器无法打开github情况解决](#火狐浏览器github)
-
-    * 从 https://git-scm.com/ 上下载64位的Git,一路默认;
-    * 从GitHub官网上下载github desktop 用它来克隆初始化本地库
-
+## 使用火狐浏览器无法打开github情况解决办法
    <span id="火狐浏览器github"></span>
 
     火狐浏览器：火狐浏览器不走系统的根证书，需要在选项中添加根证书
