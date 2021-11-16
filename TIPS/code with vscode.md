@@ -19,6 +19,7 @@
    ![图片](https://user-images.githubusercontent.com/93923763/141791134-a1db92c6-aa57-41c3-8e40-8779b7349de7.png)
 
     * 按F6看看有没有hello world
+    * ***务必重启计算机***
     * 关于Windowspowershell中如图乱码问题，
    ![图片](https://user-images.githubusercontent.com/93923763/141790471-54f55db8-05b0-4175-8891-5c3635ad9a2f.png)
 
