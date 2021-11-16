@@ -18,6 +18,7 @@ THIS IS MY FRESH YEAR OF COLLEGE AND THERE WILL BE SOME CODES OR TIPS ABOUT C LA
 gist：https://gist.github.com/TT2TER/7eed647ec1393600721529f308f007c8
 
 ### GitHub desktop
+从github上下载桌面版，安装。
 
 ### Your account has been flagged.
 https://support.github.com/ticket/personal/0/1390545
