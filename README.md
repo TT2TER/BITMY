@@ -35,7 +35,7 @@
 ### powershell乱码 <span id="jump"></span> 需要[代理](#jump1)
     * 使用 Powerline 进行样式化，并使用更纱黑体 可从清华镜像站下载:https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/
     * Sarasa Gothic / 更纱黑体：基于Noto Sans，全宽引号
-  *   Sarasa UI / 更纱黑体 UI：基于Noto Sans窄引号
+    * Sarasa UI / 更纱黑体 UI：基于Noto Sans窄引号
       Sarasa Mono T / 等距更纱黑体 T：基于Iosevka，有连字，全宽破折号
       Sarasa Mono / 等距更纱黑体：基于Iosevka，有连字，半宽破折号
       Sarasa Term：基于Iosevka，无连字，半宽破折号
