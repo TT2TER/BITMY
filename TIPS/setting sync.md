@@ -8,7 +8,7 @@
 ![图片](https://user-images.githubusercontent.com/93923763/141948527-87c18bd9-6524-43a6-be24-3a176ae6d095.png)
 
 ## sync with vscode
-没啥用
+    没啥用
     打开vscode，Ctrl shift p 输入sync 选择更新上传配置or下载配置
 ![图片](https://user-images.githubusercontent.com/93923763/141955494-af9d8af1-a48f-4af2-a27b-9191020060d1.png)
 
