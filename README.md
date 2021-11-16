@@ -9,6 +9,9 @@ THIS IS MY FRESH YEAR OF COLLEGE AND THERE WILL BE SOME CODES OR TIPS ABOUT C LA
 
 ### TIPS:
 ##### [code with vscode](TIPS/code%20with%20vscode.md)
+##### [create a token](TIPS/create%20a%20token.md)
+##### [create gist](TIPS/create%20gist.md)
+##### [setting sync](TIPS/setting%20sync.md)
 
 # 操作笔记&杂记(temp)
 ### 书签同步插件
