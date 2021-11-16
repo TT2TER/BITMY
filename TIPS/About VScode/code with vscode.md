@@ -36,8 +36,11 @@
     * 在快速开始中下载后按照网站教程安装证书
 [使用火狐浏览器无法打开github情况解决办法](#火狐浏览器github)
 
-    * 从 https://git-scm.com/ 上下载64位的Git,一路默认;
-    * 从GitHub官网上下载github desktop 用它来克隆初始化本地库
+    * 安装Git，方法见如下链接
+[Git安装](#jump1)
+
+    * 从GitHub官网上下载github desktop （用它来克隆初始化本地库）
+
 
 ## powershell乱码 <span id="jump"></span> 
     * 使用 Powerline 进行样式化，并使用更纱黑体 可从清华镜像站下载:https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/
@@ -72,11 +75,13 @@
     * bingo
 
 
-## 使用火狐浏览器无法打开github情况解决办法
-   <span id="火狐浏览器github"></span>
-
+## 使用火狐浏览器无法打开github情况解决办法 <span id="火狐浏览器github"></span>
+   
     火狐浏览器：火狐浏览器不走系统的根证书，需要在选项中添加根证书
     1、火狐浏览器->选项->隐私与安全->证书->查看证书
     2、证书颁发机构->导入
     3、选择证书文件C:\Users(用户)\Administrator(你的账号)\.dev-sidecar\dev-sidecar.ca.crt（Mac或linux为~/.dev-sidecar目录）
     4、勾选信任由此证书颁发机构来标识网站，确定即可
+
+## Git简单安装 <span id="jump1"></span>
+
