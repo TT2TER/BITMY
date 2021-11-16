@@ -15,7 +15,7 @@ THIS IS MY FRESH YEAR OF COLLEGE AND THERE WILL BE SOME CODES OR TIPS ABOUT C LA
 
 # 操作笔记&杂记(temp)
 ### 书签同步插件
-gist：https://gist.github.com/TT2TER/7eed647ec1393600721529f308f007c8
+[存书签的gist](https://gist.github.com/TT2TER/7eed647ec1393600721529f308f007c8)
 
 ### GitHub desktop
 从github上下载桌面版，安装。
