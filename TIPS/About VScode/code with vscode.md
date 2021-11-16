@@ -84,4 +84,7 @@
     4、勾选信任由此证书颁发机构来标识网站，确定即可
 
 ## Git简单安装 <span id="jump1"></span>
+    * install git form
+[git](https://git-scm.com/downloads)
 
+    * 一路默认安装
