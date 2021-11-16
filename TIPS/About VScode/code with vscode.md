@@ -27,8 +27,8 @@
 
     * 其他的推荐插件 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code, code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
 
-## GitHub with VScode (Building)
-
+## GitHub with VScode 
+##### 安装上GitHub的代理
     * Dev-sidecar 下载链接如下
     
    [Dev-sidecar下载链接](https://gitee.com/docmirror/dev-sidecar#%E4%BA%8C%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
@@ -36,11 +36,39 @@
     * 在快速开始中下载后按照网站教程安装证书
 [使用火狐浏览器无法打开github情况解决办法](#火狐浏览器github)
 
+##### 安装Git
     * 安装Git，方法见如下链接
 [Git安装](#jump1)
 
+##### 安装客户端
     * 从GitHub官网上下载github desktop （用它来克隆初始化本地库）
+    * 登陆Github.com 新建一个仓库
+![图片](https://user-images.githubusercontent.com/93923763/142030672-79bafe46-5cb7-4a6b-ae72-6af1fecb9c1a.png)
+![图片](https://user-images.githubusercontent.com/93923763/142030957-204f64f5-d1d9-45ee-bd33-d82047b5cdf7.png)
+     
+    * 在本地克隆在线库
+![图片](https://user-images.githubusercontent.com/93923763/142031352-f0fe9daf-7ef2-4060-8de5-2807f7caef89.png)
+![图片](https://user-images.githubusercontent.com/93923763/142031787-16252c83-3a9a-43ae-b576-727568a0aea2.png)
+    
+    * 界面介绍（拉取就是从仓库上下载文件覆盖本地，HISTORY是历史版本，open in vscode 顾名思义）
+![图片](https://user-images.githubusercontent.com/93923763/142032105-34613fc8-41da-4ee5-871b-0991f0839a18.png)
 
+##### 将之前配置好的vscode工作文件夹复制进这个文件夹中
+##### 在vscode中更新文件方法
+
+    * 文件更改后在左侧源代码管理会显示
+![图片](https://user-images.githubusercontent.com/93923763/142032915-4e316f35-5e89-44f3-9595-b52aae098ac7.png)
+    
+    * 第一步 加号将文件暂存，第二步输入对这次更新的描述，第三步对钩提交
+![图片](https://user-images.githubusercontent.com/93923763/142033120-b86b7c31-9b08-4898-a3e2-b866bd5f7b24.png)
+
+    * 最后推送到github上
+![图片](https://user-images.githubusercontent.com/93923763/142033567-2b7c3324-1c87-43b1-a85d-d5793c549b2f.png)
+
+    * 如果远程仓库（github上）有更新，在本地执行拉取即可
+![图片](https://user-images.githubusercontent.com/93923763/142033846-0c62c62f-847a-46be-b791-0f27a6d46b74.png)
+
+    按这个做仅仅是能使用，而非理解，可以自行查询相关资料
 
 ## powershell乱码 <span id="jump"></span> 
     * 使用 Powerline 进行样式化，并使用更纱黑体 可从清华镜像站下载:https://mirrors.tuna.tsinghua.edu.cn/github-release/be5invis/Sarasa-Gothic/
@@ -72,7 +100,7 @@
 
    ![图片](https://user-images.githubusercontent.com/93923763/141822039-3f0575e0-4df3-4994-ac4d-68e65a8cd2d0.png)
 
-    * bingo
+    * bingo！
 
 
 ## 使用火狐浏览器无法打开github情况解决办法 <span id="火狐浏览器github"></span>
