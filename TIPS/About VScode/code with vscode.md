@@ -6,7 +6,7 @@
     * 下载vscode 勾选添加path和添加到右键菜单//方便
    ![图片](https://user-images.githubusercontent.com/93923763/141787540-641b1d28-5b4f-4a6a-9a37-f673fa068748.png)
 
-    * 这一步完全摆烂了，找了个自动配置脚本 https://vscch3.vercel.app/ 连接上用网盘下载，然后跟着视频教程(在最后配置的时候先选新手推荐配置//为了初始化自定义设置，然后再选用自定义，修改如图C语言即可）
+    * 这一步完全摆烂了，找了个自动配置脚本 https://vscch3.vercel.app/ 连接上用网盘下载，然后跟着视频教程(在最后配置的时候先选中新手推荐配置//为了初始化自定义设置，然后再选用自定义，修改如图C语言即可）
    ![图片](https://user-images.githubusercontent.com/93923763/141789579-3ef85007-1555-4b86-8aa7-618ad24e50b9.png)
 
     * 配置完成后打开vscode弹出的对话框如下图勾选
@@ -26,6 +26,11 @@
    参见：[powershell乱码](#jump)
 
     * 其他的推荐插件 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code, code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
+    其中关于code runner插件，安装之后在插件设置中去寻找 run/open in 
+    
+   ![图片](https://user-images.githubusercontent.com/93923763/142205097-b5c2fff9-b375-40e8-9451-5ed89f951c42.png)
+   ![图片](https://user-images.githubusercontent.com/93923763/142205715-5c68cccd-9078-4b37-89df-279f7d85c0da.png)
+
 
 ## GitHub with VScode 
 ##### 安装上GitHub的代理
