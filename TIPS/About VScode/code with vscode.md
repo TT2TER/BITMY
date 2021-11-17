@@ -26,7 +26,7 @@
    参见：[powershell乱码](#jump)
 
     * 其他的推荐插件 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code, code runner, bracket pair colorizer 2, indent-rainbow, one dark pro, power mode, vsc netease music 以上插件百度名称就有教程
-    其中关于code runner插件，安装之后在插件设置中去寻找 run/open in 
+    其中关于code runner插件，安装之后在插件设置中去寻找 run in terminal
     
    ![图片](https://user-images.githubusercontent.com/93923763/142205097-b5c2fff9-b375-40e8-9451-5ed89f951c42.png)
    ![图片](https://user-images.githubusercontent.com/93923763/142205715-5c68cccd-9078-4b37-89df-279f7d85c0da.png)
