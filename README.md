@@ -8,7 +8,11 @@ THIS IS MY FRESH YEAR OF COLLEGE AND THERE WILL BE SOME CODES OR TIPS ABOUT C LA
 ### MOOC
 
 ### TIPS:
+
+#### About vscode：
 ##### [code with vscode](TIPS/About%20VScode/code%20with%20vscode.md)
+
+#### About github
 ##### [create a token](TIPS/About%20GitHub/create%20a%20token.md)
 ##### [create gist](TIPS/About%20GitHub/create%20gist.md)
 ##### [setting sync](TIPS/About%20GitHub/setting%20sync.md)
