@@ -6,6 +6,8 @@ int sum(char *a, char *b, char *c, int la, int lb)
     int now = 0, up = 0;
     while (now < la || now < lb)
     {
+        if(a[now]=='\0')a[now]='0';
+        if(b[now]=='\0')b[now]='0';
         c[now] = (a[now] - '0' + b[now] - '0' + up) + '0';
         up = (c[now] - '0') / 10;
         c[now] = ((c[now] - '0') % 10) + '0';
@@ -55,5 +57,6 @@ int main()
     {
         printf("%c", pc[lc]);
     }
+    printf("\n");
     return 0;
 }
