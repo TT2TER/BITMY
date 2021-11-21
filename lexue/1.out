@@ -1,4 +1,142 @@
-Please, please do it--4 would 2 Mary very,
-7 much.
-
-Thanks
+#include<stdio.h>
+#include<ctype.h>
+charin[80];
+inttab;
+intenter;
+intcheckfor(inti)
+{
+    intret=0;
+    for(intj=0;j<=i-2;j++)
+    {
+        if(in[j]=='f'&&in[j+1]=='o'&&in[j+2]=='r')
+        {
+            ret=1;
+            break;
+        }
+    }
+    returnret;
+}
+voidputtab(inttab)
+{
+    for(intk=0;k<tab;k++)
+    {
+        printf("");
+    }
+}
+intmain()
+{
+    freopen("1.out","w",stdout);
+    inti=1;
+    while((in[i]=getchar()
+    !=EOF)
+    {
+        if(checkfor(i)
+        &&in[i]==')
+        )
+        {
+            puttab(tab);
+            for(intk=1;k<i;k++)
+            {
+                printf("%c",in[k]);
+            }
+            printf("%c\n",in[i]);
+            i=1;
+            continue;
+        }
+        if(in[i]==';
+        '&&in[i-1]==')
+        )
+        {
+            puttab(tab);
+            for(intk=1;k<i;k++)
+            {
+                printf("%c",in[k]);
+            }
+            printf("%c\n",in[i]);
+            i=1;
+            continue;
+        }
+        if(in[i]!=';
+        '&&in[i-1]==')
+        )
+        {
+            {
+                ')
+                {
+                    puttab(tab);
+                    for(intk=1;k<i;k++)
+                    {
+                        printf("%c",in[k]);
+                    }
+                    printf("\n");
+                    puttab(tab);
+                    {
+                        \n");
+                        tab++;
+                    }
+                    {
+                        puttab(tab);
+                        for(intk=1;k<i;k++)
+                        {
+                            printf("%c",in[k]);
+                        }
+                        printf("\n");
+                    }
+                    i=1;
+                    continue;
+                }
+                if(!checkfor(i)
+                &&in[i]==';
+                ')
+                {
+                    puttab(tab);
+                    for(intk=1;k<i;k++)
+                    {
+                        printf("%c",in[k]);
+                    }
+                    printf("%c\n",in[i]);
+                    i=1;
+                    continue;
+                }
+                {
+                    ')
+                    {
+                        puttab(tab);
+                        {
+                            \n");
+                            tab++;
+                            i=1;
+                            continue;
+                        }
+                    }
+                    ')
+                    {
+                        tab--;
+                        puttab(tab);
+                    }
+                    \n");
+                    i=1;
+                    continue;
+                }
+                if(in[i]!='>
+                ')
+                ;
+                {
+                    puttab(tab);
+                    for(intk=1;k<i;k++)
+                    {
+                        printf("%c",in[k]);
+                    }
+                    printf("%c\n",in[i]);
+                    i=1;
+                    continue;
+                }
+                if(in[i]=='\n')
+                {
+                    i=1;
+                    continue;
+                }
+                i++;
+            }
+            return0;
+        }

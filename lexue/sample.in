@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main(){printf("Orz Dashen!");if(a==0){printf("\n");}return 0;}
+
+#include<stdio.h>
+int main()
+{
+    printf("Orz Dashen!");
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+int rp=100000;{{{printf("Orz Dashi");}rp+=1000000;}}
+return 50;}
+
+#include<stdio.h>
+int main()
+{
+    int rp=100000;
+    {
+        {
+            {
+                printf("Orz Dashi");
+            }
+            rp+=1000000;
+        }
+    }
+    return 50;
+}
+
+#include<stdio.h>
+int rp=0;void orz()
+{
+int i,j;
+for(i=1;i<=1000;i++){rp++;}for(j=1;j<=1000;j++){rp+=j;}}
+int main()
+{orz();printf("%d",rp);}
+
+#include<stdio.h>
+int rp=0;
+void orz()
+{
+    int i,j;
+    for(i=1;i<=1000;i++)
+    {
+        rp++;
+    }
+    for(j=1;j<=1000;j++)
+    {
+        rp+=j;
+    }
+}
+int main()
+{
+    orz();
+    printf("%d",rp);
+}
