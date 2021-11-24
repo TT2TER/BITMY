@@ -2,7 +2,7 @@
 ## VScode配置流程
 
 
-#### 211116更新
+#### 安装和配置
     * 下载vscode 勾选添加path和添加到右键菜单//方便
    ![图片](https://user-images.githubusercontent.com/93923763/141787540-641b1d28-5b4f-4a6a-9a37-f673fa068748.png)
 
