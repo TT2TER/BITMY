@@ -31,6 +31,13 @@
    ![图片](https://user-images.githubusercontent.com/93923763/142205097-b5c2fff9-b375-40e8-9451-5ed89f951c42.png)
    ![图片](https://user-images.githubusercontent.com/93923763/142205715-5c68cccd-9078-4b37-89df-279f7d85c0da.png)
 
+    * vscode 中推荐字体:Fira Code
+    
+    settings.json:
+    "editor.fontFamily": "'Fira Code','Sarasa Mono SC', monospace",
+    "editor.fontLigatures": true,//这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+    "editor.fontSize": 12,//设置字体大小
+    "editor.fontWeight": "400",
 
 ## GitHub with VScode 
 ##### 安装上GitHub的代理
