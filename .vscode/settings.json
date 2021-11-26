@@ -6,6 +6,7 @@
     "editor.fontSize": 12,//设置字体大小
     "editor.fontWeight": "400",
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdlib.h": "c"
     }, //这个设置字体粗细，可选normal,bold,"100"~"900"等，选择合适的就行
 }
