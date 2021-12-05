@@ -7,8 +7,8 @@ typedef struct _node
 } Node;
 typedef struct _list //这个数据结构代表了整个链表,代表了无限可能
 {
-    Node *head;//指的第一个结点
-    Node *tail;//指的倒数第二个结点
+    Node *head; //指的第一个结点
+    Node *tail; //指的倒数第二个结点
 } List;
 
 void add(List *plist, int number)
@@ -42,42 +42,103 @@ void print(List *pList)
     }
 }
 
-void search(List *pList, int number)
+void searchanddel(List *pList, int number)
 {
     Node *p;
     Node *q;
-    for (q = NULL, p = pList->head; p; )
+    for (q = NULL, p = pList->head; p;)
     {
         if (p->value == number)
         {
-            if (q)//边界条件就是->左边的东西是不是NULL?
+            if (q) //边界条件就是->左边的东西是不是NULL?
             {
                 q->next = p->next;
                 free(p);
-                p=q->next;
+                p = q->next;
             }
             else
             {
                 pList->head = p->next;
                 free(p);
-                p=pList->head;
+                p = pList->head;
             }
-            
         }
         else
         {
-            q=p;
+            q = p;
             p = p->next;
         }
     }
 }
+/*
 void del(List *pList)
 {
     Node *p;
     Node *q;
-    for(p=pList->head,q=p->next;p;p=q,q=p->next)
+    for (p = pList->head, q = p->next; p; p = q, q = p->next)//错误原因是因为最后p->next的p=q=NULL
     {
         free(p);
+    }
+}
+*/
+void del(List *pList)
+{
+    Node *p;
+    Node *q;
+    for (p = pList->head; p; p = q)
+    {
+        q = p->next;
+        free(p);
+    }
+}
+
+void reverse(List *pList)
+{
+    Node *p = pList->head->next;
+    Node *q = NULL;
+    Node *o = NULL;
+    if (!q)
+    {
+        q = p->next;
+        if (q)
+        {
+            if (q->next)
+            {
+                o = q->next;
+            }
+        }
+        p->next = pList->head;
+        pList->head->next = NULL;
+        pList->tail = p;
+    }
+    while (q && o)
+    {
+        q->next = p;
+        if (o->next)
+            break;
+        else
+        {
+            p = q;
+            q = o;
+            o = o->next;
+        }
+    }
+    if (!o)
+    {
+        if (!q)
+        {
+            pList->head = p;
+        }
+        else
+        {
+            q->next = p;
+            pList->head = q;
+        }
+    }
+    else
+    {
+        o->next = q;
+        pList->head = o;
     }
 }
 int main()
@@ -93,15 +154,21 @@ int main()
             add(&list, number);
         }
     } while (number != -1);
-    /*for(;list.head->next!=NULL;list.head=list.head->next/*list.head++)
-    {
-        printf("%d",list.head->value);
-    }
-    printf("%d", list.head->value);*/
     print(&list);
-    scanf("%d",&number);
-    search(&list,number);
+    // scanf("%d", &number);
+    // searchanddel(&list, number);
+    reverse(&list);
     print(&list);
     del(&list);
     return 0;
 }
+//TODO:head++为什么不行？
+/*
+    for(;list.head->next!=NULL;list.head=list.head->next//list.head++)
+    {
+        printf("%d\n",list.head->value);
+        //printf("%p\n",list.head);
+    }
+    //printf("%d", sizeof(Node));
+    getchar();getchar();
+    */
