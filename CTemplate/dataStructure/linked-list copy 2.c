@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+typedef int ElementType;
+
 typedef struct _node
 {
     int value;
@@ -10,7 +13,19 @@ typedef struct _list //这个数据结构代表了整个链表,代表了无限�
     Node *head; //指的第一个结点
     Node *tail; //指的倒数第二个结点
 } List;
-
+/*
+typedef struct GNode//广义表
+{
+    int tag;
+    union
+    {
+        ElementType Data;
+        struct GNode *Sublist;
+    } URegion;
+    struct GNode *next;
+} GList;
+*/
+// TODO:头结点本身就是空的怎么办
 void add(List *plist, int number)
 {
     // add to linked-list,用malloc分配
@@ -94,6 +109,10 @@ void del(List *pList)
 
 void reverse(List *pList)
 {
+    if (!pList->head)//如果链表是空的
+        return;
+    if (!pList->head->next) //如果只有一个元素
+        return;
     Node *p = pList->head->next;
     Node *q = NULL;
     Node *o = NULL;
@@ -155,14 +174,14 @@ int main()
         }
     } while (number != -1);
     print(&list);
-    // scanf("%d", &number);
-    // searchanddel(&list, number);
+    scanf("%d", &number);
+    searchanddel(&list, number);
     reverse(&list);
     print(&list);
     del(&list);
     return 0;
 }
-//TODO:head++为什么不行？
+// TODO:head++为什么不行？
 /*
     for(;list.head->next!=NULL;list.head=list.head->next//list.head++)
     {
