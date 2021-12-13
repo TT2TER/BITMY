@@ -43,15 +43,16 @@
 //以上是没有优化过的，主要优化在判断上，fast=head->next,不用再来for循环
 bool hasCycle(struct ListNode *head) {
     typedef struct ListNode node;
-    if(!head||!head->next)
+    if(!head||!head->next)//本来没结点，或者只有一个结点
     {
         return false;
     }
+    //有两个结点就可以用快慢指针了
     node *slow=head;
     node *fast=head->next;
     while(fast!=slow)
     {
-        if(!fast||!fast->next)
+        if(!fast||!fast->next)//无脑判断就行
         {
             return false;
         }

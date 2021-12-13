@@ -8,6 +8,7 @@ typedef struct _node
     int value;
     struct _node *next;
 } Node;
+//不常用
 typedef struct _list //这个数据结构代表了整个链表,代表了无限可能
 {
     Node *head; //指的第一个结点
