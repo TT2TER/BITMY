@@ -11,7 +11,7 @@ int main(void)
 	  case '-':printf("%d\n",a-b);break;
 	  case '*':printf("%d\n",a*b);break;
 	  case '/':printf("%d\n",a/b);break;
-	  case '%':printf("%d\n",a%b);break; 
+	  case '%':printf("%d\n",a%b);break; // 
 	}
 	return 0;
 }
