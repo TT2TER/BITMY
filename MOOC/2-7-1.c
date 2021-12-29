@@ -3,7 +3,7 @@
 typedef struct key
 {
     char x;
-    char y;
+    char y;//
 } k;
 int main()
 {
