@@ -1,0 +1,31 @@
+#EXTM3U x-tvg-url=""
+#EXTINF:-1 tvg-id="LuQuanYiTao.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",鹿泉一套 (576p) [Not 24/7]
+http://hblq.chinashadt.com:2036/live/stream:luquan1.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="LuQuanErTao.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",鹿泉二套 (576p) [Not 24/7]
+http://hblq.chinashadt.com:2036/live/stream:luquan2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HuangHuaYingShi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黃驊影視 (576p)
+http://hbhh.chinashadt.com:2111/live/hhys.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HuangHuaBoHaiXinQu.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黃驊渤海新區 (576p)
+http://hbhh.chinashadt.com:2111/live/bhtv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HuangHuaYiTao.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黄骅一套 (576p)
+http://hbhh.chinashadt.com:2111/live/hhtv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HuangHuaErTao.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黄骅二套 (576p)
+http://hbhh.chinashadt.com:2111/live/hhtv2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HeiMeiDianJing.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黑莓电竞 (1080p)
+http://39.134.66.66/PLTV/88888888/224/3221225559/index.m3u8
+#EXTINF:-1 tvg-id="HeiLongWeiShi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黑龙卫视 (1080p)
+http://223.110.243.169/PLTV/3/224/3221227252/index.m3u8
+#EXTINF:-1 tvg-id="HeiLongJiang.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黑龙江 (1080p)
+http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8
+#EXTINF:-1 tvg-id="HeiLongJiangWei.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黑龙江卫 (1080p)
+http://183.207.248.71/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv
+#EXTINF:-1 tvg-id="HeiLongJiangWeiShi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="http://s.wasu.cn/data/images/201512/24/567b9d67870b3.png" group-title="",黑龙江卫视 (1080p)
+http://39.134.115.163:8080/PLTV/88888910/224/3221225690/index.m3u8
+#EXTINF:-1 tvg-id="QianXiNanGongGong.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黔西南公共 (288p) [Geo-blocked]
+http://live.qxndt.com/channel3/sd/live.m3u8
+#EXTINF:-1 tvg-id="QianXiNanZongHe.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",黔西南综合 (288p) [Geo-blocked]
+http://live.qxndt.com/channel2/sd/live.m3u8
+#EXTINF:-1 tvg-id="LongYanGongGong.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",龙岩公共 (540p) [Not 24/7]
+http://stream.lytv.net.cn/1/sd/live.m3u8
+#EXTINF:-1 tvg-id="LongYanZongHe.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",龙岩综合 (540p)
+http://stream.lytv.net.cn/2/sd/live.m3u8
