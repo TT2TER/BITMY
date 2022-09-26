@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "condition_variable": "cpp",
+        "algorithm": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "mutex": "cpp",
+        "shared_mutex": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "cstring": "cpp",
+        "complex": "cpp",
+        "list": "cpp",
+        "functional": "cpp",
+        "random": "cpp"
+    },
+    "C_Cpp.errorSquiggles":"Enabled",
+        
+    "editor.fontFamily": "'Fira Code','Sarasa Mono SC', monospace",
+    "editor.fontLigatures": true,//这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+    "editor.fontSize": 10,//设置字体大小
+    "editor.fontWeight": "400",
+}
