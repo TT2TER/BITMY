@@ -14,7 +14,7 @@ class RLSMatrix
 {
 public:
     Triple data[MAX_SIZE];     //非零元三元组表
-    int rpos[MAX_ROW];         //每行第一个非零元素的位置
+    int rpos[MAX_ROW] = {0};   //每行第一个非零元素的位置
     int row_num, col_num, cnt; //稀疏矩阵的行数、列数以及非零元素的个数
 };
 
@@ -88,12 +88,16 @@ void MultRLSMatrix(RLSMatrix M, RLSMatrix N, RLSMatrix &rs)
 /*
 算法的主要思想如下：
 
-　实际上它的求解过程与1中的算法本质是一样的，只不过充分利用了三元组的性质和rpos数组的信息。为了得到非零元的乘积，只要对M.data[1,2...]中的每个元素即(i,k,M[i]k])
+　实际上它的求解过程与1中的算法本质是一样的，只不过充分利用了三元组的性质和rpos数组的信息。为了得到非零元的乘积，
+只要对M.data[1,2...]中的每个元素即(i,k,M[i]k])
 ，找到N.data中所有相应的元素(k,j,N[k][j])
 
 相乘即可，为此
 
-只需在N.data中找到矩阵N中第k行的所有非零元；而rpos数组正好提供了相关的信息。rpos[row]表示矩阵N中第row行，第一个非零元在N.data中的序号；而rpos[row+1]-1表示矩阵N中第row行最后一个非零元素在N.data中的序号(因为data数组中存储的全都是非零元素，而rpos[row+1]是第row+1行中第一个非零元素在data中的位置，所以它的前一个位置一定是第row行中最后一个非零元素在data中的位置)。
+只需在N.data中找到矩阵N中第k行的所有非零元；而rpos数组正好提供了相关的信息。rpos[row]表示矩阵N中第row行，
+第一个非零元在N.data中的序号；而rpos[row+1]-1表示矩阵N中第row行最后一个非零元素在N.data中的序号
+(因为data数组中存储的全都是非零元素，而rpos[row+1]是第row+1行中第一个非零元素在data中的位置，
+所以它的前一个位置一定是第row行中最后一个非零元素在data中的位置)。
 
 此外，有几点需要注意：
 
@@ -101,3 +105,46 @@ void MultRLSMatrix(RLSMatrix M, RLSMatrix N, RLSMatrix &rs)
 
 (2)该算法的时间复杂度具体分析见《数据结构》p103，总之，矩阵越稀疏，该算法时间复杂度越低，能达到O(mp)数量级。
 */
+int main()
+{
+    RLSMatrix x[2];
+    int add[2][MAX_ROW];
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < MAX_ROW; j++)
+        {
+            add[i][j] = 0;
+        }
+    }
+    for (int i = 0; i < 2; i++)
+    {
+        int a, b, num;
+        scanf("%d\n%d\n%d", &a, &b, &num);
+
+        x[i].row_num = a;
+        x[i].col_num = b;
+        x[i].cnt = num;
+        for (int j = 1; j <= num; j++)
+        {
+            scanf("%d %d %d", &x[i].data[j].i, &x[i].data[j].j, &x[i].data[j].val);
+            add[i][x[i].data[j].i]++;
+            //printf("\n%d %d\n", x[i].data[j].i, x[i].rpos[x[i].data[j].i]);
+            // printf("%d,%d,%d\n",x[i].data[j].i, x[i].data[j].j, x[i].data[j].val);
+        }
+        x[i].rpos[0]=1;
+        for(int j=1;j<=a;j++)
+        {
+            x[i].rpos[j]=x[i].rpos[j-1]+add[i][j-1];
+            //printf("\n%d %d\n", x[i].data[j].i, x[i].rpos[x[i].data[j].i]);
+        }
+    }
+    RLSMatrix ans;
+    MultRLSMatrix(x[0], x[1], ans);
+    printf("%d\n%d\n%d\n", ans.row_num, ans.col_num, ans.cnt);
+    for (int i = 1; i <= ans.cnt; i++)
+    {
+        printf("%d,%d,%d\n", ans.data[i].i, ans.data[i].j, ans.data[i].val);
+        //;
+    }
+    return 0;
+}
