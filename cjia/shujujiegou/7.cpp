@@ -3,6 +3,7 @@
 #include <stack>
 #include <cstring>
 #include <cmath>
+#include <map>
 
 using namespace std;
 struct Ret
@@ -12,6 +13,13 @@ struct Ret
 };
 stack<int> num;
 stack<char> sig;
+
+typedef struct var
+{
+    char name[10];
+    char num[10];
+    struct var *next;
+} var, *ptvar;
 //一起用来定位优先顺序
 char operation[9] =
     {'+', '-', '*', '/', '(', ')', '#', '^', '%'};
@@ -111,15 +119,119 @@ Ret operate(int x, int y, char symbol)
 
 int main()
 {
-    int n;
+
     int flag; //数字0，（ 为1，其他2
     char expr[100], *p, *nega;
     char fnega = '0';
 
-    scanf("%d", &n);
+    char g[100]; //读进来整个字符串，然后处理字符串
+    memset(g, '\0', 100);
+    gets(g);
+    ptvar en;
+    ptvar h = (ptvar)malloc(sizeof(var));
+    strcpy(h->name, "0");
+    strcpy(h->num, "2");
+    en = h;
+    h->next = NULL;
 
-    while (n--)
+    // test，最终请注释掉这段代码
+    ptvar z = (ptvar)malloc(sizeof(var));
+    strcpy(z->name, "abc");
+    strcpy(z->num, "2");
+    z->next = NULL;
+    en->next = z;
+    en = z;
+    //代码结束
+
+    while (strcmp("end", g) != 0) // end功能
     {
+        memset(expr, '\0', 100);
+        int option = 1; // 1为方程，2为问号，输出
+        char now[10] = {'\0'};
+        if (g[0] == '?')
+            option = 2;
+        if (option == 2)
+        {
+            int i;
+            for (i = 0; i < 10 && g[i + 2] != '\0'; i++)
+            {
+                now[i] = g[i + 2];
+            }
+            now[i] = '\0';
+            //操作
+            ptvar q = h;
+            int done = 0;
+            while (q->next != NULL && !done)
+            {
+                q = q->next;
+                if (strcmp(q->name, now) == 0)
+                {
+                    printf("%s=%s\n", now, q->num);
+                    //初始化，继续循环
+                    memset(g, '\0', 100);
+                    gets(g);
+                    done = 1;
+                    break;
+                }
+            }
+            if (done)
+                continue;
+        }
+        else if (option == 1)
+        {
+            int i;
+            for (i = 0; i < 10 && g[i] != '='; i++)
+            {
+                now[i] = g[i];
+            }
+            now[i] = '\0'; //处理等号左边
+            int j;
+            for (j = 0; j + i < 100 && g[i + j + 1] != '\0'; j++)
+            {
+                expr[j] = g[i + j + 1];
+            }
+            expr[j++] = '#';
+            expr[j] = '\0'; //处理等号右边
+
+            //处理等号右边的字符
+            int tail = 0;
+            j = 0;
+            for (j = 0; j < strlen(expr); j) //前后指针遍历
+            {
+                while ((expr[j] > 'z' || expr[j] < 'a') && expr[j] != '\0')
+                {
+                    j++;
+                }
+                tail = j;
+                while (expr[tail] <= 'z' && expr[tail] >= 'a' && expr[tail] != '\0')
+                {
+                    tail++;
+                }
+
+                char tochange[10];
+                char temp[100];
+
+                strcpy(temp, &expr[tail]);
+
+                int k;
+                for (k = 0; k < tail - j; k++)
+                {
+                    tochange[k] = expr[j + k];
+                }
+                expr[j] = '\0';
+                tochange[k] = '\0';
+                ptvar q = h;
+                while (q->next != NULL)
+                {
+                    q = q->next;
+                    if (strcmp(q->name, tochange) == 0)
+                    {
+                        strcat(expr, q->num);
+                        strcat(expr, temp);
+                    }
+                }
+            }
+        }
         while (!num.empty())
         {
             num.pop();
@@ -128,12 +240,9 @@ int main()
         {
             sig.pop();
         }
-
+        //以下为计算模块
         flag = 2;
-        memset(expr, '\0', 100);
-        scanf("%s", expr);
 
-        strcat(expr, "#");
         p = expr;
         nega = expr;
 
@@ -228,11 +337,11 @@ int main()
                     }
                     else if (ans == '<')
                     {
-                        sig.push(ch); 
+                        sig.push(ch);
                         sig.push(*p++);
                         continue;
                     }
-                    
+
                     else if (ans == '=')
                     {
                         p++;
@@ -260,11 +369,49 @@ int main()
             }
         }
         if (!dead && num.size() == 1 && sig.size() == 1)
-            printf("%d\n", num.top());
+        {
+            //printf("%d\n", num.top());
+            int ansnum = num.top();
+            char ans[10] = {'\0'};
+            // if(ansnum<0)
+            // {
+            //     strcat(ans,"-");
+            //     ansnum=-ansnum;
+            // }
+            //itoa(ansnum, ans, 10);
+            snprintf(ans, sizeof(ans), "%d", ansnum);
+            ptvar q = h;
+            int had = 0;
+            while (q->next != NULL)
+            {
+                q = q->next;
+                if (strcmp(q->name,now)==0)
+                {
+                    //更新现有
+                    strcpy(q->name, now);
+                    strcpy(q->num, ans);
+                    had = 1;
+                    break;
+                }
+            }
+            if (!had)
+            {
+                ptvar z = (ptvar)malloc(sizeof(var));
+                strcpy(z->name, now);
+                strcpy(z->num, ans);
+                z->next = NULL;
+                en->next = z;
+                en = z;
+            }
+            // printf("%s",ans);
+        }
+
         else if (!dead)
         {
             printf("error.\n");
         }
+        memset(g, '\0', 100);
+        gets(g);
     }
     return 0;
 }
