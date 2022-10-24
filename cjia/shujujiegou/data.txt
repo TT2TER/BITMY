@@ -1,9 +1,1 @@
-[Text]
-abc123 abc test
-abc
-ab
-
-abcd
-[/Text]
-f 1
-c abc/
+(a,(b,(c,(d),(e)),(f)),(g,(h),(i)),(q,(k,(m),(n),(o),(p,(r))),(x,(y,(z)))))
