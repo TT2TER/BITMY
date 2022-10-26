@@ -2,3 +2,7 @@
 launch.*
 tasks.*
 /.vscode/*
+cjia/.vscode/c_cpp_properties.json
+cjia/.vscode/launch.json
+cjia/.vscode/settings.json
+cjia/.vscode/tasks.json
