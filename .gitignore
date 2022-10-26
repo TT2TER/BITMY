@@ -1,3 +1,4 @@
 *.exe
-launch.json
-tasks.json
+launch.*
+tasks.*
+/.vscode/*

@@ -1,13 +1,13 @@
 {
   "configurations": [
     {
-      "cStandard": "c17",
-      "compilerPath": "C:\\mingw64\\bin\\gcc.exe",
+      "cStandard": "c11",
+      "compilerPath": "/usr/bin/gcc",
       "includePath": [
         "${workspaceFolder}/**"
       ],
-      "intelliSenseMode": "windows-gcc-x64",
-      "name": "Win32"
+      "intelliSenseMode": "linux-gcc-x64",
+      "name": "Linux"
     }
   ],
   "version": 4
